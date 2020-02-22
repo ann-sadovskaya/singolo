@@ -132,3 +132,69 @@ nav a:hover {
     background: url(asserts/horizontal-wallpapper.png);
     background-position: -125px -118px;
 }
+
+.services {
+    padding: 45px 0 0px 40px;
+    height: 450px;
+    background-color: #f2f2f2;
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato Black", "Arial", sans-serif;
+    letter-spacing: -1px;
+}
+
+.services p {
+    padding: 2px 0px 26px 0px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato Light", "Arial", sans-serif;
+    word-spacing: -1.5px;
+}
+
+.services-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 320px;
+    height: 125px;
+}
+
+.container .service .info {
+    margin: -18px 0 0 20px;
+}
+
+.container .service .info h3 {
+    margin-bottom: 0px;
+    font-family: "Lato Black", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    letter-spacing: -1px;
+}
+
+.info p {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato Light", "Arial", sans-serif;
+    letter-spacing: -1px;
+}
