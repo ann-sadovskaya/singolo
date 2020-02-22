@@ -19,9 +19,14 @@ header h1 {
     text-transform: uppercase;
     line-height: 10px;
     letter-spacing: -1.05px;
-  }
+}
   
- .asterisk {
+.header-bottom{
+    height: 6px;
+    background-color: #323746;
+}
+  
+.asterisk {
     color: #f06c64;
 }
 
@@ -56,12 +61,74 @@ nav a:hover {
     color: #f06c64;
 }
 
-.header-bottom{
-    height: 6px;
-    background-color: #323746;
-}
-
 .slider {
+    position: relative;
     height: 600px;
     background-color: #f06c64;
+}
+
+.slider .arrow-prev {
+    position: absolute;
+    top: 281px;
+    left: 41px;
+}
+
+.slider .arrow-next {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 963px;
+    top: 281px;
+}
+
+.slider .vertical-iphone {
+    position: absolute;
+    border-radius: 27px;
+    left: 113px;
+    top: 52px;
+}
+
+.slider .vertical-iphone .base {
+    position: absolute;
+}
+
+.slider .vertical-iphone .wallpapper {
+    position: absolute;
+    width: 188px;
+    height: 333px;
+    left: 14px;
+    top: 65px;
+    z-index: 20;
+    background: url(asserts/vertical-wallpapper.png);
+    background-position: -15px -134px;
+}
+
+.slider .horizontal-iphone {
+    position: absolute;
+    border-radius: 27px;
+    height: 240px;
+    width: 483px;
+    left: 547px;
+    top: 52px;
+}
+
+.slider .horizontal-iphone .base {
+    position: absolute;
+    z-index: 10;
+    transform: rotate(90deg);
+}
+
+.slider .horizontal-iphone .shadow{
+    position: absolute;
+    transform: rotateZ(90deg) rotateY(180deg);
+}
+
+.slider .horizontal-iphone .wallpapper {
+    position: absolute;
+    height: 189px;
+    width: 334px;
+    top: 135px;
+    left: -62px;
+    z-index: 20;
+    background: url(asserts/horizontal-wallpapper.png);
+    background-position: -125px -118px;
 }
