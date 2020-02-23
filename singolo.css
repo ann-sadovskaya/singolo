@@ -70,26 +70,23 @@ body {
 
 .slider {
     position: relative;
-    height: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    padding: 0 40px;
     background-color: #f06c64;
     border-bottom: 15px solid #ea676b;
 }
 
-.slider .arrow-prev {
-    position: absolute;
-    top: 281px;
-    left: 41px;
-}
-
 .slider .arrow-next {
-    position: absolute;
     transform: rotate(180deg);
-    left: 963px;
-    top: 281px;
 }
 
 .slider-control {
-    background: transparent;
+    width: 16px;
+    height: 27px;
+    background: url("asserts/chev.png") transparent;
     border: none;
 }
 
