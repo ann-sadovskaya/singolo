@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Lato";
+    src: url("asserts/fonts/Lato-Regular.woff") format("woff"),
+        url("asserts/fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("asserts/fonts/Lato-Black.woff") format("woff"),
+        url("asserts/fonts/Lato-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("asserts/fonts/Lato-Light.woff") format("woff"),
+        url("asserts/fonts/Lato-Light.woff2") format("woff2");
+}

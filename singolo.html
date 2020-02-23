@@ -3,16 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Singolo</title>
-    <link href="singolo.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link href="singolo.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Singolo<span class="asterisk">*</span></h1>
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
+    <header class="header">
+        <h1 class="logo">
+            <a href="#" title="Singolo*">Singolo<span class="asterisk">*</span></a>
+        </h1>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
@@ -20,24 +23,25 @@
             </ul>
         </nav>
     </header>
-    <div class="header-bottom"></div>
     <section class="slider">
-        <div class="arrow-prev">
+        <button class="arrow-prev slider-control">
             <img src="asserts/chev.png">
+        </button>
+        <div class="slide">
+            <div class="vertical-iphone">
+                <img class="base" src="asserts/iphone.png">
+                <img class="shadow" src="asserts/shadow.png">
+                <div class="wallpapper"></div>
+            </div>
+            <div class="horizontal-iphone">
+                <img class="base" src="asserts/iphone.png">
+                <img class="shadow" src="asserts/shadow.png">
+                <div class="wallpapper"></div>
+            </div>
         </div>
-        <div class="vertical-iphone">
-            <img class="base" src="asserts/iphone.png">
-            <img class="shadow" src="asserts/shadow.png">
-            <div class="wallpapper"></div>
-        </div>
-        <div class="horizontal-iphone">
-            <img class="base" src="asserts/iphone.png">
-            <img class="shadow" src="asserts/shadow.png">
-            <div class="wallpapper"></div>
-        </div>
-        <div class="arrow-next">
+        <button class="arrow-next slider-control">
             <img src="asserts/chev.png">
-        </div>
+        </button>
     </section>
     <section class="services">
         <h2>Our Services</h2>
@@ -46,7 +50,7 @@
         condimentum nibh.</p>
         <div class="container">
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/pen.png">
                 </div>
                 <div class="info">
@@ -56,7 +60,7 @@
                 </div>
             </div>
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/bulb.png">
                 </div>
                 <div class="info">
@@ -66,7 +70,7 @@
                 </div>
             </div>
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/heart.png">
                 </div>
                 <div class="info">
@@ -76,7 +80,7 @@
                 </div>
             </div>
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/phone.png">
                 </div>
                 <div class="info">
@@ -86,7 +90,7 @@
                 </div>
             </div>
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/bubble.png">
                 </div>
                 <div class="info">
@@ -96,7 +100,7 @@
                 </div>
             </div>
             <div class="service">
-                <div class="logo">
+                <div class="icon">
                     <img src="asserts/star.png">
                 </div>
                 <div class="info">
