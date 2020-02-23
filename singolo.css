@@ -194,6 +194,11 @@ body {
     padding: 0 10px;
     margin-bottom: 20px;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .service-item {
+        flex-basis: 300px;
+    }
+}
 
 .service-item .icon{
     margin-right: 20px;
