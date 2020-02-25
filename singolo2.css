@@ -1,7 +1,98 @@
+@import "fonts.css";
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    font-family: Lato, Arial, sans-serif;
+    min-width: 1020px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+}
+
+.container {
+    margin: 0 auto;
     width: 1020px;
 }
+
+.portfolio-container {
+    padding: 44px 40px;
+    height: 870px;
+    border-bottom: 6px solid #323746;
+}
+
+.portfolio .title {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato Black";
+    text-align: left;
+    letter-spacing: 0.15px;
+}
+
+.portfolio .description {
+    font-size: 18px;
+    line-height: 24px;
+    color: #767e9e;
+    font-family: "Lato Light";
+    letter-spacing: -0.22px;
+}
+
+.filter-panel {
+    display: flex;
+    margin-top: -2px;
+}
+
+.filter-param {
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    border: 1px solid #666d89;
+    font-size: 12px;
+    line-height: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+}
+
+.filter-param.active {
+    color: #dedede;
+}
+
+.filter-param:hover {
+    cursor: pointer;
+}
+
+.gallery-panel {
+    padding-top: 4px;
+}
+
+.gallery {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.gallery:nth-child(n+13) {
+    display: none;
+}
+
+.gallery-item {
+    flex-basis: 23%;
+    margin: 0 20px 16px 0;
+}
+
+.gallery-item:nth-child(4n+4) {
+    margin: 0 0 16px 0;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
