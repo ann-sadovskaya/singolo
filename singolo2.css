@@ -66,6 +66,7 @@ body {
 
 .filter-param:hover {
     cursor: pointer;
+    color: #dedede;
 }
 
 .gallery-panel {
@@ -119,6 +120,12 @@ body {
     margin-right: 0px;
 }
 
+.person .avatar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .person .title {
     margin: 0;
     padding: 13px 0;
@@ -138,8 +145,12 @@ body {
     justify-content: flex-start;
 }
 
-.icon {
+.social-icons .icon {
     margin: 26px 8px 0 0;
 }
 
-
+.social-icons .icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
