@@ -17,11 +17,11 @@ body {
 
 .get-a-quote {
     background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
 }
 
 .quote-container {
-    height: 654px;
-    border-bottom: 6px solid #ea676b;
+    height: 649px;
 }
 
 .title {
@@ -65,6 +65,15 @@ body {
     border-radius: 5px;
 }
 
+.submit-btn {
+    margin-bottom: 16px;
+    height: 38px;
+    border: #d6564f;
+    background-color: #d6564f;
+    border-radius: 5px;
+    color: #f0d8d9;
+}
+
 .input-item::placeholder {
     padding-left: 15px;
     font-size: 12px;
@@ -75,7 +84,7 @@ body {
     text-align: justify;
 }
 
-.message-form .message {
+.message-form #message {
     height: 202px;
 }
 
@@ -91,7 +100,6 @@ body {
 }
 
 .contact-info .description {
-    margin: 1px 0;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.05px;
@@ -107,11 +115,27 @@ body {
 
 .contact-item {
     display: flex;
-    text-decoration: none;
+    align-items: center;
 }
 
 .contact-item a {
+    text-decoration: none;
     color: #f0d8d9;
+}
+
+.contact-item .location {
+    height: 11px;
+    width: 7px;
+}
+
+.contact-item .phone {
+    height: 11px;
+    width: 11px;
+}
+
+.contact-item .mail {
+    height: 8px;
+    width: 13px;
 }
 
 .footer {
