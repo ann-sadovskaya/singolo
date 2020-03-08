@@ -74,6 +74,10 @@ body {
     color: #f0d8d9;
 }
 
+.submit-btn:hover {
+    cursor: pointer;
+}
+
 .input-item::placeholder {
     padding-left: 15px;
     font-size: 12px;
