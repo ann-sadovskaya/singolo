@@ -84,6 +84,12 @@ body {
     text-align: justify;
 }
 
+.input-message {
+    padding-top: 8px;
+    padding-left: 0px;
+    resize: none;
+}
+
 .message-form #message {
     height: 202px;
 }
@@ -106,36 +112,43 @@ body {
 }
 
 .contact-list {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    margin: 20px 0;
+    margin-top: 25px;
     padding: 0;
+    list-style: none;
 }
-
-.contact-item {
-    display: flex;
-    align-items: center;
+  
+.contact-link {
+    margin-bottom: 3.5px;
+    margin-left: 1px;
 }
-
-.contact-item a {
+  
+.contact-link a {
     text-decoration: none;
     color: #f0d8d9;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
 }
-
-.contact-item .location {
-    height: 11px;
-    width: 7px;
-}
-
-.contact-item .phone {
-    height: 11px;
-    width: 11px;
-}
-
-.contact-item .mail {
-    height: 8px;
+  
+.icon-svg {
+    display: inline-block;
+    margin-right: 9px;
     width: 13px;
+    height: 12px;
+    background-size: 100% 100%;
+}
+  
+.icon-location {
+    background: url("asserts/location.svg") -1px 1px no-repeat;
+}
+
+.icon-phone {
+    background: url("asserts/phone-contact.svg") 0 1px no-repeat;
+}
+  
+.icon-mail {
+    background: url("asserts/mail.svg") -1px 3px no-repeat;
 }
 
 .footer {
@@ -151,6 +164,11 @@ body {
 
 .copyrights {
     margin: -3px 0px 0 2px;
+    font-family: Lato, "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #666d89;
+    letter-spacing: -0.2px;
 }
 
 .social-icons {
