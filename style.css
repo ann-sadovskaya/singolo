@@ -363,6 +363,7 @@ body {
 .person .description {
     font-size: 12px;
     line-height: 21px;
+    text-overflow: ellipsis;
 }
 
 .social-icons {
