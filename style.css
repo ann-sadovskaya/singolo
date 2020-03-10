@@ -358,12 +358,14 @@ body {
     margin: 0;
     padding: 13px 0;
     font-size: 18px;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .person .description {
     font-size: 12px;
     line-height: 21px;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
