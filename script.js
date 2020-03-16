@@ -38,9 +38,12 @@ GALLERY.addEventListener("click", event => {
 const FILTER_GALLERY = document.getElementsByClassName('filter-panel')[0];
 
 FILTER_GALLERY.addEventListener("click", event => {
-    if (event.target.tagName !== 'BUTTON') return;
+    if ((event.target.tagName !== 'BUTTON') || (event.target.classList.contains('active'))) return;
     FILTER_GALLERY.querySelectorAll('button').forEach(el => el.classList.remove('active'));
     event.target.classList.add("active");
+    let firstItem = GALLERY.firstElementChild;
+    GALLERY.removeChild(firstItem);
+    GALLERY.appendChild(firstItem);
 })
 
 const SUBMIT_BUTTON = document.getElementById('submit-btn');
