@@ -9,273 +9,292 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-content">
+            <span id="close-btn" class="close">&times;</span>
+            <div class="modal-body">
+                <p class="content-text"></p>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header-container container">
             <h1 class="logo">
                 <a href="#" title="Singolo*">Singolo<span class="asterisk">*</span></a>
             </h1>
             <nav class="navigation">
-                <ul class="menu">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="menu" class="menu">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="slider">
-        <div class="slider-container container">
-            <button class="arrow-prev slider-control"></button>
-            <div class="slide">
-                <div class="vertical-iphone">
-                    <img class="base" src="asserts/iphone.png" alt="iphone">
-                    <img class="shadow" src="asserts/shadow.png" alt="shadow">
-                    <div class="wallpapper"></div>
+    <section class="main">
+        <section class="slider">
+            <div class="slider-container container">
+                <button class="arrow-prev slider-control"></button>
+                <div class="slide">
+                    <div class="vertical-iphone iphone">
+                        <img class="base clickable" src="asserts/iphone.png" alt="iphone">
+                        <img class="shadow" src="asserts/shadow.png" alt="shadow">
+                        <div class="wallpapper clickable"></div>
+                    </div>
+                    <div class="horizontal-iphone iphone">
+                        <img class="base clickable" src="asserts/iphone.png" alt="iphone">
+                        <img class="shadow" src="asserts/shadow.png" alt="shadow">
+                        <div class="wallpapper clickable"></div>
+                    </div>
                 </div>
-                <div class="horizontal-iphone">
-                    <img class="base" src="asserts/iphone.png" alt="iphone">
-                    <img class="shadow" src="asserts/shadow.png" alt="shadow">
-                    <div class="wallpapper"></div>
-                </div>
+                <button class="arrow-next slider-control"></button>
             </div>
-            <button class="arrow-next slider-control"></button>
-        </div>
-    </section>
-    <section class="services">
-        <div class="services-container container">
-            <h2 class="services-title">Our Services</h2>
-            <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                mollis, non
-                commodo luctus, nisi
-                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
-                mauris
-                condimentum nibh.</p>
-            <ul class="service-list">
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/pen.png" alt="pen">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">Custom Design</h3>
-                        <p class="service-item-p">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                            laoreet,
-                            viverra lacus ut, ultrices velit.</p>
-                    </div>
-                </li>
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/bulb.png" alt="bulb">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">Inovative Ideas</h3>
-                        <p class="service-item-p">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
-                            nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                </li>
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/heart.png" alt="heart">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">Love Is The Answer</h3>
-                        <p class="service-item-p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-                            et consequat felis. Quisque condimentum.</p>
-                    </div>
-                </li>
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/phone.png" alt="phone">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">Responsive Layout</h3>
-                        <p class="service-item-p">Sed porttitor placerat rhoncus. In at nunc tellus.
-                            Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                    </div>
-                </li>
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/bubble.png" alt="bubble">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">24 / 7 Support</h3>
-                        <p class="service-item-p">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
-                            sem erat.
-                            Pellentesque egestas venenatis lorem .</p>
-                    </div>
-                </li>
-                <li class="service-item">
-                    <div class="service-item-icon">
-                        <img src="asserts/star.png" alt="star">
-                    </div>
-                    <div class="info">
-                        <h3 class="service-item-title">Feel Like A Star</h3>
-                        <p class="service-item-p">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-                            Fusce vitae aliquam tellus.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="portfolio">
-        <div class="container portfolio-container">
-            <div class="portfolio-header">
-                <h2 class="title">Portfolio</h2>
-                <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                    odio
-                    sem nec elit</p>
-            </div>
-            <nav class="filter-panel">
-                <button class="active filter-param">All</button>
-                <button class="filter-param">Web Design</button>
-                <button class="filter-param">Graphic Design</button>
-                <button class="filter-param">Artwork</button>
-            </nav>
-            <section class="gallery-panel">
-                <ul class="gallery">
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/1.png" alt="Portfolio 1"></a>
+        </section>
+        <section id="services" class="services">
+            <div class="services-container container">
+                <h2 class="services-title">Our Services</h2>
+                <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                    mollis, non
+                    commodo luctus, nisi
+                    erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                    tortor
+                    mauris
+                    condimentum nibh.</p>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/pen.png" alt="pen">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">Custom Design</h3>
+                            <p class="service-item-p">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                                laoreet,
+                                viverra lacus ut, ultrices velit.</p>
+                        </div>
                     </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/2.png" alt="Portfolio 2"></a>
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/bulb.png" alt="bulb">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">Inovative Ideas</h3>
+                            <p class="service-item-p">Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                                purus,
+                                nec rutrum tellus dolor id lorem.</p>
+                        </div>
                     </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/3.png" alt="Portfolio 3"></a>
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/heart.png" alt="heart">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">Love Is The Answer</h3>
+                            <p class="service-item-p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+                                et consequat felis. Quisque condimentum.</p>
+                        </div>
                     </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/4.png" alt="Portfolio 4"></a>
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/phone.png" alt="phone">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">Responsive Layout</h3>
+                            <p class="service-item-p">Sed porttitor placerat rhoncus. In at nunc tellus.
+                                Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                        </div>
                     </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/5.png" alt="Portfolio 5"></a>
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/bubble.png" alt="bubble">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">24 / 7 Support</h3>
+                            <p class="service-item-p">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla
+                                a
+                                sem erat.
+                                Pellentesque egestas venenatis lorem .</p>
+                        </div>
                     </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/6.png" alt="Portfolio 6"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/7.png" alt="Portfolio 7"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/8.png" alt="Portfolio 8"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/9.png" alt="Portfolio 9"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/10.png" alt="Portfolio 10"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/11.png" alt="Portfolio 11"></a>
-                    </li>
-                    <li class="gallery-item">
-                        <a href="#"><img src="asserts/gallery/12.png" alt="Portfolio 12"></a>
+                    <li class="service-item">
+                        <div class="service-item-icon">
+                            <img src="asserts/star.png" alt="star">
+                        </div>
+                        <div class="info">
+                            <h3 class="service-item-title">Feel Like A Star</h3>
+                            <p class="service-item-p">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+                                Fusce vitae aliquam tellus.
+                            </p>
+                        </div>
                     </li>
                 </ul>
-            </section>
-        </div>
-    </section>
-    <section class="about">
-        <div class="container about-container">
-            <div class="about-header">
-                <h2 class="title">About Us</h1>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container portfolio-container">
+                <div class="portfolio-header">
+                    <h2 class="title">Portfolio</h2>
+                    <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                        odio
+                        sem nec elit</p>
+                </div>
+                <nav class="filter-panel">
+                    <button class="active filter-param">All</button>
+                    <button class="filter-param">Web Design</button>
+                    <button class="filter-param">Graphic Design</button>
+                    <button class="filter-param">Artwork</button>
+                </nav>
+                <section class="gallery-panel">
+                    <ul id="gallery" class="gallery">
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/1.png" alt="Portfolio 1"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/2.png" alt="Portfolio 2"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/3.png" alt="Portfolio 3"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/4.png" alt="Portfolio 4"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/5.png" alt="Portfolio 5"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/6.png" alt="Portfolio 6"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/7.png" alt="Portfolio 7"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/8.png" alt="Portfolio 8"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/9.png" alt="Portfolio 9"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/10.png" alt="Portfolio 10"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/11.png" alt="Portfolio 11"></a>
+                        </li>
+                        <li class="gallery-item">
+                            <a><img src="asserts/gallery/12.png" alt="Portfolio 12"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container about-container">
+                <div class="about-header">
+                    <h2 class="title">About Us</h1>
+                        <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                            mollis, non commodo luctus, nisi erat porttitor
+                            ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                            mauris
+                            condimentum nibh.</p>
+                </div>
+                <section class="team">
+                    <div class="person">
+                        <img class="avatar" src="asserts/person1.png" alt="person 1">
+                        <h3 class="title">Adam Jensen</h3>
+                        <p class="description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec
+                            rutrum tellus dolor id lorem.</p>
+                        <ul class="social-icons">
+                            <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
+                        </ul>
+                    </div>
+                    <div class="person">
+                        <img class="avatar" src="asserts/person2.png" alt="person 2">
+                        <h3 class="title">Desmond Miles</h3>
+                        <p class="description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                            viverra lacus ut, ultrices velit.</p>
+                        <ul class="social-icons">
+                            <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
+                        </ul>
+                    </div>
+                    <div class="person">
+                        <img class="avatar" src="asserts/person3.png" alt="person 3">
+                        <h3 class="title">Scolara Visari</h3>
+                        <p class="description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                            consequat felis. Quisque condimentum.</p>
+                        <ul class="social-icons">
+                            <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
+                            <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="contact" class="get-a-quote">
+            <div class="quote-container container">
+                <div class="quote-header">
+                    <h2 class="title">Get a Quote</h2>
                     <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                        mollis, non commodo luctus, nisi erat porttitor
-                        ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh.</p>
+                        mollis,
+                        non commodo luctus, nisi erat porttitor ligula,
+                        eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum
+                        nibh.</p>
+                </div>
+                <section class="quote">
+                    <form class="message-form">
+                        <input type="text" id="name" placeholder="Name(Required)" class="input-item" required />
+                        <input type="email" id="email" placeholder="Email(Required)" class="input-item" required />
+                        <input type="text" id="subject" placeholder="Subject" class="input-item" />
+                        <textarea id="message" placeholder="Describe your project in detail..."
+                            class="input-item input-message"></textarea>
+                        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3 class="title">Contact Information</h3>
+                        <p class="description">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-</br>ra nibh.
+                            Fusce
+                            vitae aliquam tellus. Proin sit amet volutpat</br> libero.
+                            Nulla sed nunc et tortor luctus faucibus. Morbi at</br> aliquet turpis, et consequat felis.
+                        </p>
+                        <ul class="contact-list">
+                            <li class="contact-link">
+                                <span class="icon-svg icon-location"></span><a href="#">Elm St. 14/05 Lost City</a>
+                            </li>
+                            <li class="contact-link">
+                                <span class="icon-svg icon-phone"></span><a href="tel:035283318635">03528 331 86 35</a>
+                            </li>
+                            <li class="contact-link">
+                                <span class="icon-svg icon-mail"></span><a
+                                    href="mailto:info@singolo.com">info@singolo.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <section class="team">
-                <div class="person">
-                    <img class="avatar" src="asserts/person1.png" alt="person 1">
-                    <h3 class="title">Adam Jensen</h3>
-                    <p class="description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec
-                        rutrum tellus dolor id lorem.</p>
-                    <ul class="social-icons">
-                        <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
-                    </ul>
+        </section>
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="copyrights">
+                    © Copyright 2013
                 </div>
-                <div class="person">
-                    <img class="avatar" src="asserts/person2.png" alt="person 2">
-                    <h3 class="title">Desmond Miles</h3>
-                    <p class="description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
-                        viverra lacus ut, ultrices velit.</p>
-                    <ul class="social-icons">
-                        <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
-                    </ul>
-                </div>
-                <div class="person">
-                    <img class="avatar" src="asserts/person3.png" alt="person 3">
-                    <h3 class="title">Scolara Visari</h3>
-                    <p class="description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
-                        consequat felis. Quisque condimentum.</p>
-                    <ul class="social-icons">
-                        <li class="icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
-                        <li class="icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+                <ul class="footer-social-icons">
+                    <li class="footer-icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
+                    <li class="footer-icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
+                    <li class="footer-icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
+                    <li class="footer-icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
+                </ul>
+            </div>
+        </footer>
     </section>
-    <section class="get-a-quote">
-        <div class="quote-container container">
-            <div class="quote-header">
-                <h2 class="title">Get a Quote</h2>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
-                    non commodo luctus, nisi erat porttitor ligula,
-                    eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                    nibh.</p>
-            </div>
-            <section class="quote">
-                <form class="message-form">
-                    <input type="text" id="name" placeholder="Name(Required)" class="input-item" required />
-                    <input type="email" id="email" placeholder="Email(Required)" class="input-item" required/>
-                    <input type="text" id="subject" placeholder="Subject" class="input-item" />
-                    <textarea id="message" placeholder="Describe your project in detail..."
-                        class="input-item input-message"></textarea>
-                    <button type="submit" id="submit" class="submit-btn">Submit</button>
-                </form>
-                <div class="contact-info">
-                    <h3 class="title">Contact Information</h3>
-                    <p class="description">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-</br>ra nibh. Fusce
-                        vitae aliquam tellus. Proin sit amet volutpat</br> libero.
-                        Nulla sed nunc et tortor luctus faucibus. Morbi at</br> aliquet turpis, et consequat felis.</p>
-                    <ul class="contact-list">
-                        <li class="contact-link">
-                            <span class="icon-svg icon-location"></span><a href="#">Elm St. 14/05 Lost City</a>
-                        </li>
-                        <li class="contact-link">
-                            <span class="icon-svg icon-phone"></span><a href="tel:035283318635">03528 331 86 35</a>
-                        </li>
-                        <li class="contact-link">
-                            <span class="icon-svg icon-mail"></span><a
-                                href="mailto:info@singolo.com">info@singolo.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container container">
-            <div class="copyrights">
-                © Copyright 2013
-            </div>
-            <ul class="footer-social-icons">
-                <li class="footer-icon"><a href="#"><img src="asserts/facebook.png" alt="facebook"></a></li>
-                <li class="footer-icon"><a href="#"><img src="asserts/google.png" alt="google"></a></li>
-                <li class="footer-icon"><a href="#"><img src="asserts/twitter.png" alt="twitter"></a></li>
-                <li class="footer-icon"><a href="#"><img src="asserts/linkedIn.png" alt="linkedIn"></a></li>
-            </ul>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
